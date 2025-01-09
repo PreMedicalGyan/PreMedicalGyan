@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+h1 span, .logo span {
+    color: #007bff;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger .line {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Sidebar Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    transition: left 0.3s ease-in-out;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    background-color: #444;
+}
+
+/* Active State for Hamburger and Sidebar */
+.side-menu.active {
+    left: 0;
+    background-color: blue;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+/* Hero Section (Starts right below the header with a light golden background) */
+.hero {
+    background-color: #fef2c0;  /*light golden color */
+    color: black;
+    text-align: center;
+    padding: 80px 20px 40px;  /* Adjust padding to start right below the header */
+    min-height: 40vh;  /* Reduced min-height */
+    margin-top: 100px;  /* Adds space to push it below the header */
+}
+
+.hero-content h1 {
+    font-size: 28px;  /* Reduced font size */
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;  /* Adjusted font size */
+    max-width: 500px;  /* Reduced width */
+    margin: 0 auto;
+}
+
+/* Subjects Section */
+.subjects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.subject-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.subject {
+    background: #fff;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.subject:hover {
+    transform: scale(1.05);
+}
+
+.subject h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.btn-view {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-view:hover {
+    background: #0056b3;
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-box {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #343a40;
+    color: white;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #343a40;
+    color: white;
+    margin-top: 20px;
+}
