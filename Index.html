@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreMedicalGyan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu" class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div id="side-menu" class="side-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#about">About Us</a></li> <!-- About Us Link -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://i.postimg.cc/xCJF6Hsz/IMG-20250109-153614.jpg" alt="PreMedicalGyan Logo" class="logo">
+        </div>
+    </header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to <span>PreMedicalGyan</span></h1>
+        <p>Your trusted guide to a successful medical career journey.</p>
+    </div>
+</section>
+
+    <section id="subjects" class="subjects">
+        <h2>Subjects We Cover</h2>
+        <div class="subject-container">
+            <div class="subject">
+                <h3>Biology</h3>
+                <p>Dive deep into human anatomy, physiology, and botany.</p>
+                <button class="btn-view">Learn More</button>
+            </div>
+            <div class="subject">
+                <h3>Chemistry</h3>
+                <p>Understand chemical reactions, bonds, and mechanisms.</p>
+                <button class="btn-view">Learn More</button>
+            </div>
+            <div class="subject">
+                <h3>Physics</h3>
+                <p>Master the concepts of motion, energy, and thermodynamics.</p>
+                <button class="btn-view">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="about-box">
+            <h2>About Us</h2>
+            <p>
+                At PreMedicalGyan, we are committed to providing top-notch guidance 
+                and resources for pre-medical students. Join our community to achieve 
+                your dreams with expert support.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PreMedicalGyan. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle the menu when the hamburger icon is clicked
+        function toggleMenu() {
+            const sideMenu = document.getElementById('side-menu');
+            const hamburger = document.getElementById('hamburger-menu');
+
+            sideMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Hide the logo smoothly on scroll
+        window.addEventListener('scroll', function() {
+            const logo = document.querySelector('.logo');
+            
+            if (window.scrollY > 50) {
+                logo.style.opacity = '0.5';  // Make the logo semi-transparent on scroll
+            } else {
+                logo.style.opacity = '1';  // Fully visible logo when at the top
+            }
+        });
+    </script>
+</body>
+</html>
