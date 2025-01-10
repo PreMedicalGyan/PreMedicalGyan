@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology - PreMedicalGyan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://i.postimg.cc/xCJF6Hsz/IMG-20250109-153614.jpg" alt="PreMedicalGyan Logo" class="logo">
+        </div>
+    </header>
+
+    <section class="subject-details">
+        <h1>Biology</h1>
+
+        <!-- NEET 2024 Paper Table -->
+        <h2>NEET 2024 Paper</h2>
+        <table class="paper-table">
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Paper</th>
+                    <th>View</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Biology NEET 2024</td>
+                    <!-- Updated View Button -->
+                    <td><button onclick="window.open('https://www.udlinks.com/WDoj', '_blank')">View</button></td>
+                    <td><button onclick="downloadFile('biology_paper_2024.pdf')">Download</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PreMedicalGyan. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to handle file download
+        function downloadFile(filePath) {
+            const link = document.createElement('a');
+            link.href = filePath;
+            link.download = filePath.split('/').pop();
+            link.click();
+        }
+    </script>
+</body>
+</html>
