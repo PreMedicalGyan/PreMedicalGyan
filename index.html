@@ -7,31 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hamburger Menu -->
-    <div id="hamburger-menu" class="hamburger" onclick="toggleMenu()">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
 
-    <!-- Sidebar Menu -->
-    <div id="side-menu" class="side-menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#subjects">Subjects</a></li>
-            <li><a href="#about">About Us</a></li> <!-- About Us Link -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+ <header>
+    <div class="logo-container">
+        <img src="https://i.postimg.cc/ydYNmHrf/IMG-20250205-141022.png" alt="PreMedicalGyan Logo" class="logo">
+        <span class="logo-text">PreMedicalGyan</span> <!-- Logo ke saath text -->
     </div>
-
-    <header>
-        <div class="logo-container">
-            <img src="https://i.postimg.cc/xCJF6Hsz/IMG-20250109-153614.jpg" alt="PreMedicalGyan Logo" class="logo">
-        </div>
-    </header>
+</header>
 
     <section id="home" class="hero">
-        <div class="hero-content">
+        <div class="hero-box">
             <h1>Welcome to <span>PreMedicalGyan</span></h1>
             <p>Your trusted guide to a successful medical career journey.</p>
         </div>
@@ -41,20 +26,20 @@
         <h2>Subjects We Cover</h2>
         <div class="subject-container">
             <div class="subject">
-    <h3>Biology</h3>
-    <p>Dive deep into human anatomy, physiology, and botany.</p>
-    <button class="btn-view" onclick="window.location.href='biology.html'">Learn More</button>
-</div>
-<div class="subject">
-    <h3>Chemistry</h3>
-    <p>Understand chemical reactions, bonds, and mechanisms.</p>
-    <button class="btn-view" onclick="window.location.href='chemistry.html'">Learn More</button>
-</div>
-<div class="subject">
-    <h3>Physics</h3>
-    <p>Master the concepts of motion, energy, and thermodynamics.</p>
-    <button class="btn-view" onclick="window.location.href='physics.html'">Learn More</button>
-</div>
+                <h3>Biology</h3>
+                <p>Dive deep into human anatomy, physiology, and botany.</p>
+                <button class="btn-view" onclick="window.location.href='biology.html'">Learn More</button>
+            </div>
+            <div class="subject">
+                <h3>Chemistry</h3>
+                <p>Understand chemical reactions, bonds, and mechanisms.</p>
+                <button class="btn-view" onclick="window.location.href='chemistry.html'">Learn More</button>
+            </div>
+            <div class="subject">
+                <h3>Physics</h3>
+                <p>Master the concepts of motion, energy, and thermodynamics.</p>
+                <button class="btn-view" onclick="window.location.href='physics.html'">Learn More</button>
+            </div>
         </div>
     </section>
 
@@ -85,7 +70,6 @@
         <p>&copy; 2025 PreMedicalGyan. All Rights Reserved.</p>
     </footer>
 
-    <!-- Script link added here -->
     <script src="script.js"></script>
 </body>
-    </html>
+</html>
