@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             logo.style.opacity = '1';  // Fully visible logo when at the top
         }
+
+        // Detect when scroll stops and start animation for text
+        let isScrolling;
+
+        // Clear any previous timeout and set new one
+        window.clearTimeout(isScrolling);
+
+        // Add 'scroll-animate' class when scroll stops
+        document.querySelector('.logo-container').classList.remove('scroll-animate');
+
+        // Set timeout to add 'scroll-animate' class after scrolling stops
+        isScrolling = setTimeout(function() {
+            document.querySelector('.logo-container').classList.add('scroll-animate');
+        }, 150); // 150ms after scrolling stops
     });
 
     // Menu toggle for the hamburger menu
